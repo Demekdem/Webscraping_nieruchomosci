@@ -31,6 +31,4 @@ Celem projektu jest przygotowanie danych do analizy lub budowy modeli uczenia ma
   Zapisanie przetworzonych zbiorów do osobnych plików `.csv`.
 
 
-## 🗃️ Struktura repozytorium (przykład)
-
 
