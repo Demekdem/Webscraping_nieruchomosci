@@ -1,8 +1,8 @@
 ## Web Scraping Nieruchomości – Projekt Analizy Cen Mieszkań
 
-🎯 Cel projektu:
+#🎯 Cel projektu:
 Celem projektu jest przygotowanie danych do analizy lub budowy modeli uczenia maszynowego w kontekście cen mieszkań w Polsce.
-Zakres realizacji:
+#Zakres realizacji:
 -Web scraping ze strony gratka.pl:
   Pobranie danych ofert nieruchomości z województwa wielkopolskiego.
   Zmienne do pobrania: Tytuł, Opis, Cena, Metraż.
