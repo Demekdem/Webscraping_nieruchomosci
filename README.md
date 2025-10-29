@@ -1,34 +1,37 @@
-# Web Scraping Nieruchomości – Projekt Analizy Cen Mieszkań
+# Web Scraping Nieruchomości 
 
 ## 🎯 Cel projektu
-Celem projektu jest przygotowanie danych do analizy lub budowy modeli uczenia maszynowego w kontekście cen mieszkań w Polsce.
+Celem projektu było pozyskanie i przygotowanie danych dotyczących cen mieszkań w Polsce w celu dalszej analizy lub wykorzystania w modelach do prognozowania wartości nieruchomości.
+
+Dane te mogą wspierać firmy z branży nieruchomości, analityków finansowych i deweloperów w podejmowaniu decyzji inwestycyjnych, analizie trendów cenowych oraz optymalizacji ofert sprzedażowych.
 
 ## 📌 Zakres realizacji
 
-- **Web scraping ze strony [gratka.pl](https://gratka.pl)**  
-  Pobranie danych ofert nieruchomości z województwa **wielkopolskiego**.  
-  Zmienne do pobrania: `Tytuł`, `Opis`, `Cena`, `Metraż`.
+- **Web scraping ze serwisu [gratka.pl](https://gratka.pl)**  
+  Pobranie ofert nieruchomości z województwa wielkopolskiego
+  Zgromadzenie kluczowych informacji: `Tytuł`, `Opis`, `Cena`, `Metraż`.
 
 - **Import danych z serwisu Kaggle**  
   Pobranie gotowego zbioru danych o nieruchomościach w Polsce.  
   Wyodrębnienie analogicznych zmiennych (`Tytuł`, `Opis`, `Cena`, `Metraż`).
 
-- **Integracja danych**  
-  Dodanie obu źródeł do osobnych `DataFrame`.
+- **Integracja danych z serwisu Kaggle**  
+  Import gotowego zbioru danych o nieruchomościach w Polsce.
+  Ujednolicenie struktury i zmiennych 
 
-- **Czyszczenie danych**  
-  - Usunięcie duplikatów (ofert o identycznym `Tytule`, `Opisie` i `Cenie`).
-  - Usunięcie rekordów z brakującymi danymi w kolumnach `Cena` i `Metraż`.
-  - Oczyszczenie kolumn `Tytuł` i `Opis` z niepotrzebnych znaków specjalnych.
+- **Czyszczenie i przygotowanie danych**  
+Usunięcie duplikatów oraz rekordów z brakującymi wartościami 
+Oczyszczenie tekstów z niepotrzebnych znaków specjalnych.
+Normalizacja zmiennych numerycznych (`Cena`, `Metraż`).
 
 - **Standaryzacja danych**  
   Normalizacja zmiennych `Cena` oraz `Metraż`.
 
-- **Wykrycie i usunięcie podejrzanych ofert**  
-  Usunięcie outlierów na podstawie wartości minimalnych i maksymalnych dla `Cena` i `Metraż`.
+- **Wykrycie i usuwanie anomalii**  
+ Identyfikacja ofert odstających (outlierów) na podstawie wartości minimalnych i maksymalnych.
 
 - **Eksport danych**  
-  Zapisanie przetworzonych zbiorów do osobnych plików `.csv`.
+  Zapisanie końcowych, przetworzonych zbiorów do plików .csv gotowych do dalszej analizy.
 
 
 
